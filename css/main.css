@@ -1,0 +1,925 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #FF3C78;
+}
+
+body {
+  background: #EEEEEE;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo-name {
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+.navbar nav .primary-nav {
+  margin-top: 5em;
+  list-style: none;
+}
+
+.navbar nav .primary-nav .current-page {
+  text-decoration: underline;
+}
+
+.navbar nav .primary-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.navbar nav .primary-nav a:hover {
+  font-weight: bold;
+}
+
+.navbar nav .mobile-menu-exit {
+  float: right;
+  width: 20px;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  width: 18px;
+}
+
+.hero {
+  padding: 3em 8em 0.5em 1em;
+  letter-spacing: 1.2px;
+}
+
+.hero span {
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}
+
+.hero .left-col {
+  line-height: 1.6em;
+}
+
+.hero .bottom-text {
+  padding-bottom: 1.5em;
+}
+
+.hero a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  background: var(--primary-color);
+  border-radius: 0.4em;
+}
+
+.hero .hero-image {
+  width: 260px;
+  padding-top: 3em;
+  padding-left: 3em;
+}
+
+.about-section {
+  background: white;
+  text-align: center;
+  padding: 0 1em 3em 1em;
+  letter-spacing: 1.2px;
+}
+
+.about-section .container-top {
+  line-height: 0.5em;
+}
+
+.about-section .about-h4 {
+  padding-top: 2.5em;
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}
+
+.about-section .hello-h4 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.about-section .personal-info-heading {
+  padding-bottom: 0.3em;
+}
+
+.about-section .about-subheading {
+  color: gray;
+  font-weight: normal;
+}
+
+.about-section hr {
+  width: 125px;
+  opacity: 0.2;
+}
+
+.about-section .para-one {
+  text-align: justify;
+  color: gray;
+}
+
+.about-section .para-one .name-span {
+  color: black;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.about-section .para-two {
+  text-align: justify;
+  color: gray;
+}
+
+.about-section .container-bottom-one {
+  display: none;
+}
+
+.about-section .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0;
+  max-width: 40rem;
+  margin-bottom: 0;
+}
+
+.about-section .skills-h4 {
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.about-section .skill {
+  background: #eee;
+  color: #333;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-right: 1.5rem;
+}
+
+.about-section .container-bottom {
+  padding-top: 2em;
+}
+
+.about-section .container-bottom .download-cv {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.7em 1em;
+  background: var(--primary-color);
+  border-radius: 0.4em;
+}
+
+.works-section {
+  text-align: center;
+  padding: 0 1em 3em 1em;
+  letter-spacing: 1.2px;
+}
+
+.works-section .container-top {
+  line-height: 0.5em;
+}
+
+.works-section .container-top .works-h4 {
+  padding-top: 2em;
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}
+
+.works-section .container-top .works-info-heading {
+  padding-bottom: 0.3em;
+}
+
+.works-section .container-top .works-subheading {
+  color: gray;
+  font-weight: normal;
+}
+
+.works-section hr {
+  width: 125px;
+  opacity: 0.2;
+}
+
+.works-section .container-bottom .project-one {
+  line-height: 1em;
+}
+
+.works-section .container-bottom .project-one img {
+  padding-top: 1.7em;
+  width: 280px;
+}
+
+.works-section .container-bottom .project-one h2 {
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 0.3em;
+}
+
+.works-section .container-bottom .project-one p {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 13%;
+  color: gray;
+  line-height: 1.6em;
+}
+
+.works-section .container-bottom .project-two {
+  line-height: 1em;
+}
+
+.works-section .container-bottom .project-two img {
+  padding-top: 1.7em;
+  width: 280px;
+}
+
+.works-section .container-bottom .project-two h2 {
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 0.3em;
+}
+
+.works-section .container-bottom .project-two p {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 13%;
+  color: gray;
+  line-height: 1.6em;
+}
+
+.contact-section {
+  background: white;
+  text-align: center;
+  padding: 0 1em 3em 1em;
+  letter-spacing: 1.2px;
+}
+
+.contact-section .container-top {
+  line-height: 0.5em;
+}
+
+.contact-section .container-top .contact-h4 {
+  padding-top: 2.5em;
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}
+
+.contact-section .container-top .contact-info-heading {
+  padding-bottom: 0.3em;
+}
+
+.contact-section .container-top .contact-subheading {
+  line-height: 1.8em;
+  color: gray;
+  font-weight: normal;
+}
+
+.contact-section hr {
+  width: 125px;
+  opacity: 0.2;
+}
+
+.contact-section .container-left {
+  padding-top: 2em;
+}
+
+.contact-section .container-left input {
+  font-size: 15px;
+  width: 80%;
+  height: 35px;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .container-left textarea {
+  font-size: 15px;
+  width: 80%;
+  height: 180px;
+  padding: .8em;
+  margin-bottom: 2em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .container-left .submit-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+  background: var(--primary-color);
+  border-radius: 0.4em;
+}
+
+.contact-section .container-right ul {
+  list-style: none;
+}
+
+.contact-section .container-right ul .phone {
+  padding-top: 2em;
+  text-align: left;
+  line-height: 0.7em;
+}
+
+.contact-section .container-right ul .phone p {
+  color: gray;
+}
+
+.contact-section .container-right ul .email {
+  padding-top: 1px;
+  text-align: left;
+  line-height: 0.7em;
+}
+
+.contact-section .container-right ul .email p {
+  color: gray;
+}
+
+.contact-section .container-right ul .address {
+  padding-top: 1px;
+  text-align: left;
+  line-height: 0.7em;
+}
+
+.contact-section .container-right ul .address p {
+  color: gray;
+}
+
+.contact-section .container-right .contact-images-bottom {
+  padding-top: 0.8em;
+  padding-bottom: 2em;
+}
+
+.contact-section .container-right .contact-images-bottom .image-one {
+  float: left;
+  width: 20px;
+  padding-left: 2.6em;
+}
+
+.contact-section .container-right .contact-images-bottom .image-two {
+  float: left;
+  width: 21px;
+  padding-left: 2em;
+}
+
+.contact-section .container-right .contact-images-bottom .image-three {
+  float: left;
+  width: 21px;
+  padding-left: 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 560px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar .nav-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    padding: 0;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  .navbar .nav-class .primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .navbar .nav-class .primary-nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4em 6em;
+  }
+  .hero .hero-image {
+    margin-bottom: -2em;
+  }
+}
+
+@media only screen and (min-width: 710px) {
+  .navbar {
+    padding-left: 2.5em;
+    padding-right: 1.5em;
+  }
+  .container-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-about .container-left {
+    width: 70%;
+    padding-left: 4em;
+  }
+  .container-about .container-bottom-one {
+    display: block;
+    padding-top: 2em;
+  }
+  .container-about .container-bottom-one .download-cv {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.7em 1em;
+    background: var(--primary-color);
+    border-radius: 0.4em;
+  }
+  .container-about .container-right {
+    width: 75%;
+  }
+  .container-about .container-right h4 {
+    padding-left: 2em;
+  }
+  .about-section .container-bottom .download-cv {
+    display: none;
+  }
+  .container-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-total .container-right {
+    position: relative;
+    top: -2em;
+    padding-right: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero .left-col {
+    position: relative;
+    left: 1.5em;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 1.5em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 1.5em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 1.5em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 2.3em;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 1.2em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    right: .2em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    right: .3em;
+  }
+  .container-total .container-left input {
+    width: 70%;
+  }
+  .container-total .container-left textarea {
+    width: 70%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .hero .left-col {
+    position: relative;
+    left: 3em;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 3em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 3em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 3em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 4.6em;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 2.4em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    right: .4em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    right: .6em;
+  }
+  .container-total .container-left input {
+    width: 60%;
+  }
+  .container-total .container-left textarea {
+    width: 60%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 2.4em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    padding-left: 5em;
+    padding-right: 3em;
+  }
+  .hero .left-col {
+    position: relative;
+    left: 6em;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 6em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 4em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 4.5em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 6.8em;
+    width: 50%;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 2em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    left: .9em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    left: 1.3em;
+    width: 50%;
+  }
+  .container-total .container-left input {
+    width: 50%;
+  }
+  .container-total .container-left textarea {
+    width: 50%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 4em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .navbar {
+    padding-left: 10em;
+    padding-right: 7em;
+  }
+  .hero {
+    padding-top: 5em;
+    padding-bottom: 6em;
+  }
+  .hero .left-col {
+    position: relative;
+    left: 8em;
+  }
+  .hero .left-col h1 {
+    font-size: 35px;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 8em;
+    width: 30%;
+  }
+  .about-section {
+    padding-top: 1em;
+    padding-bottom: 6em;
+  }
+  .container-about {
+    padding-top: 3em;
+  }
+  .container-about .container-left {
+    width: 80%;
+    padding-left: 10em;
+    padding-right: 2em;
+  }
+  .container-about .container-right {
+    width: 80%;
+    padding-right: 10em;
+  }
+  .container-bottom {
+    padding-top: 2.5em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 5em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 6.5em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 9.8em;
+    width: 45%;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 5em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    left: -.1em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    left: -.1em;
+    width: 50%;
+  }
+  .container-total {
+    padding-top: 2em;
+  }
+  .container-total .container-left {
+    position: relative;
+    left: 1em;
+  }
+  .container-total .container-left input {
+    width: 50%;
+  }
+  .container-total .container-left textarea {
+    width: 50%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 10em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .navbar {
+    padding-left: 10em;
+    padding-right: 7em;
+  }
+  .hero {
+    padding-top: 5em;
+    padding-bottom: 6em;
+  }
+  .hero .left-col {
+    position: relative;
+    left: 11em;
+  }
+  .hero .left-col h1 {
+    font-size: 35px;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 10em;
+    width: 30%;
+  }
+  .about-section {
+    padding-top: 1em;
+    padding-bottom: 6em;
+  }
+  .container-about {
+    padding-top: 3em;
+  }
+  .container-about .container-left {
+    width: 80%;
+    padding-left: 10em;
+    padding-right: 2em;
+  }
+  .container-about .container-right {
+    width: 80%;
+    padding-right: 10em;
+  }
+  .container-bottom {
+    padding-top: 2.5em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 7em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 9em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 13.6em;
+    width: 40%;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 8em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    left: -.9em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    left: -1.2em;
+    width: 40%;
+  }
+  .container-total {
+    padding-top: 2em;
+  }
+  .container-total .container-left {
+    position: relative;
+    left: 5em;
+  }
+  .container-total .container-left input {
+    width: 50%;
+  }
+  .container-total .container-left textarea {
+    width: 50%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 14em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .navbar {
+    padding-left: 15em;
+    padding-right: 9em;
+  }
+  .hero {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  .hero .left-col {
+    position: relative;
+    left: 15em;
+  }
+  .hero .left-col h1 {
+    font-size: 35px;
+  }
+  .hero .hero-image {
+    position: relative;
+    right: 13em;
+    width: 30%;
+  }
+  .about-section {
+    padding-top: 1em;
+    padding-bottom: 6em;
+  }
+  .container-about {
+    padding-top: 3em;
+  }
+  .container-about .container-left {
+    width: 70%;
+    padding-left: 15em;
+    padding-right: 5em;
+  }
+  .container-about .container-right {
+    width: 70%;
+    padding-right: 15em;
+  }
+  .container-bottom {
+    padding-top: 2.5em;
+  }
+  .container-bottom .project-one img {
+    position: relative;
+    left: 10em;
+  }
+  .container-bottom .project-one h2 {
+    position: relative;
+    left: 11em;
+  }
+  .container-bottom .project-one p {
+    position: relative;
+    left: 16.6em;
+    width: 40%;
+  }
+  .container-bottom .project-two img {
+    position: relative;
+    right: 10em;
+  }
+  .container-bottom .project-two h2 {
+    position: relative;
+    left: -2em;
+  }
+  .container-bottom .project-two p {
+    position: relative;
+    left: -3em;
+    width: 40%;
+  }
+  .container-total {
+    padding-top: 2em;
+  }
+  .container-total .container-left {
+    position: relative;
+    left: 10em;
+  }
+  .container-total .container-left input {
+    width: 50%;
+  }
+  .container-total .container-left textarea {
+    width: 50%;
+  }
+  .container-total .container-right {
+    position: relative;
+    right: 20em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

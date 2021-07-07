@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathriyan's Page</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo-name" href="#">Sathriyan</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="menu-buttom">
+            
+            <nav class="nav-class">
+                <img  id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current-page"><a href="#">Home</a></li>
+                    <li><a href="#about-page">About</a></li>
+                    <li><a href="#work-page">Works</a></li>
+                    <li><a href="#contact-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1>Hi,</h1>
+                <h1>I'am <span class="hero-name">Sathriyan</span> </h1>
+                <h1 class="bottom-text">iOS Developer</h1>
+
+                <a href="#" class="contact-buttom">Contact</a>
+            </div>
+        </div>
+
+        <img src="images/HeroImage.png" class="hero-image" alt="hero image">
+</section>
+
+<section id="about-page" class="about-section">
+    <div class="container-top">
+        <h4 class="about-h4">ABOUT</h4>
+        <h1 class="personal-info-heading">Personal Info</h1>
+        <h5 class="about-subheading">Get to know more about me</h5>
+    </div>
+<hr>
+    <div class="container-about">
+        <div class="container-left">
+            <h4 class="hello-h4">Hello !</h4>
+            <p class="para-one">My name is <span class="name-span">Sathriyan Vadivelu</span>. I’m an Aspiring iOS Developer using latest iOS technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology.</p>
+            <p class="para-two">I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
+            <div class="container-bottom-one">
+            <a href="#" class="download-cv">Download CV</a>
+            </div>
+
+        </div>
+    
+        <div class="container-right">
+            <h4 class="skills-h4">Skills</h4>
+            <ul class="skills">
+                <li class="skill">SWIFT</li>
+                <li class="skill">SWIFTUI</li>
+                <li class="skill">CORE DATA</li>
+                <li class="skill">MVVM</li>
+                <li class="skill">JSON</li>
+                <li class="skill">GITHUB</li>
+                <li class="skill">HTML 5</li>
+                <li class="skill">CSS 3</li>
+            </ul>
+            
+        </div>
+
+    </div>
+    
+    <div class="container-bottom">
+        <a href="#" class="download-cv">Download CV</a>
+    </div>
+</section>
+
+<section id="work-page" class="works-section">
+    <div class="container-top">
+        <h4 class="works-h4">WORKS</h4>
+        <h1 class="works-info-heading">Latest Projects.</h1>
+        <h5 class="works-subheading">Here you can see all my projects.</h5>
+    </div>
+    <hr>
+
+    <div class="container-bottom">
+        <div class="project-one">
+            <img src="images/ProjectOne.png" alt="project-one-image">
+            <h2>NewsDA</h2>
+            <p>News application with real-time news update from all over the world.</p>
+        </div>
+
+        <div class="project-two">
+            <img src="images/ProjectTwo.png" alt="project-two-image">
+            <h2>Revive</h2>
+            <p>An ultimate companion for depressed and helpless people to find help.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact-page" class="contact-section">
+    <div class="container-top">
+        <h4 class="contact-h4">CONTACT</h4>
+        <h1 class="contact-info-heading">Say Hello.</h1>
+        <h5 class="contact-subheading">Submit the form below so I can get back to you as soon as possible</h5>
+    </div>
+    <hr>
+
+    <div class="container-total">
+
+        <div class="container-left">
+            <form action="">
+            
+                <input type="text" placeholder="Name" name="name" id="name" required>
+    
+                <input type="email" placeholder="Email" id="email", name="email" required>
+    
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                
+            </form>
+    
+            <a href="#" class="submit-button">Submit</a>
+        </div>
+    
+        <div class="container-right">
+            <ul>
+                <li class="phone">
+                    <h4>Phone</h4>
+                    <p>Mobile : +91 8508402025</p>
+                </li>
+                
+                <li class="email">
+                    <h4>Email</h4>
+                    <p>sathriyansam@yahoo.com</p>
+                </li>
+                
+                <li class="address">
+                    <h4>Address</h4>
+                    <p>Salem</p>
+                    <p>Tamilnadu, India</pi>
+                </li>
+                
+            </ul>
+    
+            <div class="contact-images-bottom">
+                <a href="https://www.linkedin.com/in/sathriyan-v-776853177"><img class="image-one" src="images/linkedin.png" alt="linkedin profile link"></a>
+                <a href="https://github.com/SathriyanV"><img class="image-two" src="images/github.png" alt="github profile link"></a>
+                <a href="https://twitter.com/Sathriyan30"><img class="image-three" src="images/twitter.png" alt="twitter profile link"></a>
+                
+            </div>
+        </div>
+
+    </div>
+   
+
+</section>
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+</script>
+
+</body>
+</html>
