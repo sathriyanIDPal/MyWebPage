@@ -3,6 +3,10 @@
   --primary-color: #FF3C78;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #EEEEEE;
   margin: 0;
@@ -79,6 +83,7 @@ body {
 }
 
 .hero {
+  scroll-behavior: smooth;
   padding: 3em 8em 0.5em 1em;
   letter-spacing: 1.2px;
 }
@@ -112,6 +117,7 @@ body {
 }
 
 .about-section {
+  scroll-behavior: smooth;
   background: white;
   text-align: center;
   padding: 0 1em 3em 1em;
@@ -210,6 +216,7 @@ body {
 }
 
 .works-section {
+  scroll-behavior: smooth;
   text-align: center;
   padding: 0 1em 3em 1em;
   letter-spacing: 1.2px;
@@ -286,6 +293,7 @@ body {
 }
 
 .contact-section {
+  scroll-behavior: smooth;
   background: white;
   text-align: center;
   padding: 0 1em 3em 1em;
