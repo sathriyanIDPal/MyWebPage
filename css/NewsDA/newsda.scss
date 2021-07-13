@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color : #FF3C78;
+}
+
+body{
+    background: #EEEEEE;
+    margin: 0;
+    font-family: 'Poppins';
+
+    hr {
+        opacity: 0.2;
+    }
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+    display: flex;
+    place-content: space-between;
+
+    .logo-name {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 1.2px;
+        padding-top: 0.3em;
+        
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        padding-top: 0.4em;
+        padding-bottom: 0.2em;
+    }  
+}
+
+.herosection {
+
+align-items: center;
+
+    .hero-image {
+        
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            padding-top: 3em;
+        
+    }
+
+    .rightcolumn{
+        
+        h2 {
+            text-align: center;
+        }
+    
+        p {
+            text-align: justify;
+            padding-left: 18%;
+            padding-right: 18%;
+            color: gray;
+            line-height: 1.6em;
+        }
+
+        .button-div {
+
+            text-align: center;
+            letter-spacing: 1.2px;
+            padding-top: 1.5em;
+            padding-bottom: 3em;
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                padding: 0.7em 1em;
+                background: green;
+                opacity: 0.85;
+                border-radius: 0.4em;
+            }
+        }
+    } 
+}
+
+.homesection {
+
+    text-align: center;
+    .header{
+        padding-top: 0.5em;
+        .heading-h2{
+            color: red;
+            font-size: 1.5em;
+        }
+        hr{
+            width: 7em;
+            margin-bottom: 2em;
+        }
+    }
+
+    img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding-top: 1em;
+
+    }
+
+    .homedetails {
+
+        p{
+            text-align: justify;
+            padding-left: 20%;
+            padding-right: 20%;
+            color: gray;
+            line-height: 1.6em;
+        }
+
+        .categories-h4 {
+            text-align: center;
+        }
+
+        ul {
+          padding-top: 0.5em;
+            li {
+
+                background: white;
+                opacity: 0.85;
+                color: #333;
+                display: inline-block;
+                padding: 1rem 1.5rem;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+                letter-spacing: 3px;
+                margin-right: 1.5rem;
+
+            }
+        }
+    }
+}
+
+.mainpages {
+    padding-top: 0.5em;
+    text-align: center;
+    padding-bottom: 1em;
+
+    img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding-top: 2em;
+
+    }
+
+    h2{
+        color: black;
+    }
+
+    p {
+        text-align: justify;
+        padding-left: 18%;
+        padding-right: 18%;
+        color: gray;
+        line-height: 1.6em;
+    }
+}
+
+.techused {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    .headsection {
+        h2 {
+            text-align: center;
+            color: red;
+            padding-bottom: 0.1em;
+        }
+
+        hr{
+            width: 10em;
+            margin-bottom: 3em;
+        }
+    }
+    img {
+        width: 85px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4 {
+        text-align: center;
+    }
+    ul {
+        background: rgba(128,128,128, 0.15);
+        margin: 0.5em 3em;
+        border-radius: 1.5em;
+        li {
+            // background: #eee;
+            text-align: center;
+            color: #333;
+            display: inline-block;
+            align-content: space-between;
+            padding: 1.5rem 2.5rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            margin-right: 1.5rem;
+            
+        }
+    } 
+}
+
+@media only screen and  (min-width: 560px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 1em;
+            
+        }
+    
+        img {
+            padding-right: 1em;
+        }
+    }
+}
+
+@media only screen and  (min-width: 760px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 1.5em;
+            
+        }
+    
+        img {
+            padding-right: 1.5em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 5em;
+        padding-top: 1.5em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 200px;
+                    padding-left: 5em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 2em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 3em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            .homecontainer{
+
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 4em;
+
+                img {
+                    width: 200px;
+                    padding-left: 5em;
+                    padding-top: 1.5em;
+                }
+
+                .homedetails {
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 2em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 3em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 3em;
+
+                    }
+
+                    ul {
+                        padding-left: 3em;
+                        li {
+                            font-size: 0.8rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                padding-top: 1em;
+                padding-bottom: 3em;
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                img {
+                    width: 170px;
+                    padding-right: 1.5em;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 0.85em;
+                    padding-left: 3em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 1.7em;
+                }
+        }
+
+        .techused{
+            padding-bottom: 3em;
+        }
+}
+
+@media only screen and  (min-width: 960px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 3em;
+            
+        }
+    
+        img {
+            padding-right: 3em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 5em;
+        padding-top: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 200px;
+                    padding-left: 8em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 4em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 6em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            padding-bottom: 5em;
+            .homecontainer{
+        .header{
+            padding-bottom: 2.5em;
+        }
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 200px;
+                    padding-left: 8em;
+                    padding-top: 1.5em;
+                }
+
+                .homedetails {
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 4em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 6em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 6em;
+
+                    }
+
+                    ul {
+                        padding-left: 6em;
+                        li {
+                            font-size: 0.8rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                padding-top: 3em;
+                padding-bottom: 5em;
+                img {
+                    width: 170px;
+                    padding-right: 2em;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 0.85em;
+                    padding-left: 5em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 2.8em;
+                }
+        }
+
+        .techused {
+            padding-top: 1.5em;
+            padding-bottom: 5em;
+        }
+}
+
+@media only screen and  (min-width: 1160px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 5em;
+            
+        }
+    
+        img {
+            padding-right: 5em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 6em;
+        padding-top: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 225px;
+                    padding-left: 14em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 6em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 9em;
+                    padding-right: 13em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            .homecontainer{
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 225px;
+                    padding-left: 13em;
+                    padding-top: 2.5em;
+                }
+
+                .homedetails {
+                    padding-top: 1.2em;
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 5em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 7.6em;
+                        padding-right: 15em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 7.6em;
+
+                    }
+
+                    ul {
+                        padding-left: 7.5em;
+                        padding-right: 4em;
+                        li {
+                            font-size: 0.8rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                img {
+                    width: 190px;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 0.85em;
+                    margin-left: 1.8em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 3.8em;
+                }
+        }
+}
+
+@media only screen and  (min-width: 1360px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 5em;
+            
+        }
+    
+        img {
+            padding-right: 5em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 6em;
+        padding-top: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 225px;
+                    padding-left: 18em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 6em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 9em;
+                    padding-right: 18em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            .homecontainer{
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 225px;
+                    padding-left: 18em;
+                    padding-top: 2.5em;
+                }
+
+                .homedetails {
+                    padding-top: 1.2em;
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 5em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 7.6em;
+                        padding-right: 20em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 7.6em;
+
+                    }
+
+                    ul {
+                        padding-left: 7.5em;
+                        padding-right: 6em;
+                        li {
+                            font-size: 0.8rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                img {
+                    width: 210px;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 1em;
+                    margin-left: 3.3em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 5.5em;
+                }
+        }
+
+        .techused {
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+}
+
+@media only screen and  (min-width: 1460px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 5em;
+            
+        }
+    
+        img {
+            padding-right: 5em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 6em;
+        padding-top: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 225px;
+                    padding-left: 19em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 5em;
+                    font-size: 1.8em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 8.2em;
+                    padding-right: 18em;
+                    font-size: 1.1em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            .homecontainer{
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 225px;
+                    padding-left: 19em;
+                    padding-top: 2.5em;
+                }
+
+                .homedetails {
+                    padding-top: 1.2em;
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 4em;
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 6.6em;
+                        padding-right: 20em;
+                        font-size: 1.1em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 6.7em;
+                        font-size: 1.1em;
+
+                    }
+
+                    ul {
+                        padding-left: 7.5em;
+                        padding-right: 6em;
+                        li {
+                            font-size: 1rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                img {
+                    width: 210px;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 1em;
+                    margin-left: 3.3em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 5.5em;
+                }
+        }
+
+        .techused {
+            padding-left: 5em;
+            padding-right: 6em;
+        }
+}
+
+@media only screen and  (min-width: 1560px) {
+
+    .navbar {
+        
+        .logo-name {
+            padding-left: 7em;
+            font-size: 1.8em;
+            
+        }
+    
+        img {
+            padding-right: 7em;
+        }
+    }
+
+    .herosection {
+
+        align-items: center;
+        padding-bottom: 6em;
+        padding-top: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+
+            .hero-image {
+                 
+                    width: 250px;
+                    padding-left: 20em;
+                  
+            }
+        
+            .rightcolumn{
+                padding-top: 5em;
+                text-align: left;
+                h2 {
+                    text-align: left;
+                    padding-left: 4.5em;
+                    font-size: 2em;
+
+                }
+            
+                p {
+                    
+                    padding-left: 7.6em;
+                    padding-right: 18em;
+                    font-size: 1.2em;
+                    
+                }
+            }
+        }
+
+        .homesection {
+
+            .homecontainer{
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 250px;
+                    padding-left: 20em;
+                    padding-top: 2.5em;
+                }
+
+                .homedetails {
+                    padding-top: 1.2em;
+                    text-align: left;
+                    
+                    h2{
+                        text-align: left;
+                        padding-left: 3.8em;
+                        font-size: 2em;
+                    }
+
+                    p {
+                        text-align: left;
+                        padding-left: 6.4em;
+                        padding-right: 20em;
+                        font-size: 1.2em;
+                    }
+
+                    .categories-h4{
+
+                        text-align: left;
+                        padding-left: 6em;
+                        font-size: 1.3em;
+
+                    }
+
+                    ul {
+                        padding-left: 7.5em;
+                        padding-right: 10em;
+                        li {
+                            font-size: 1.2rem;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .mainpages {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                img {
+                    width: 250px;
+                }
+
+                p{
+                    text-align: left;
+                    font-size: 1em;
+                    margin-left: 3.5em;
+                }
+                h2{
+                    text-align: left;
+                    padding-left: 5.5em;
+                }
+        }
+
+        .techused {
+            padding-left: 12em;
+            padding-right: 12em;
+        }
+}

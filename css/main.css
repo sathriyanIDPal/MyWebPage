@@ -61,6 +61,7 @@ body {
 
 .navbar nav .primary-nav a:hover {
   font-weight: bold;
+  color: var(--primary-color);
 }
 
 .navbar nav .mobile-menu-exit {
@@ -202,6 +203,11 @@ body {
   margin-right: 1.5rem;
 }
 
+.about-section .skill:hover {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 .about-section .container-bottom {
   padding-top: 2em;
 }
@@ -255,6 +261,11 @@ body {
   width: 280px;
 }
 
+.works-section .container-bottom .project-one img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .works-section .container-bottom .project-one h2 {
   text-align: left;
   padding-left: 15%;
@@ -276,6 +287,11 @@ body {
 .works-section .container-bottom .project-two img {
   padding-top: 1.7em;
   width: 280px;
+}
+
+.works-section .container-bottom .project-two img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .works-section .container-bottom .project-two h2 {
@@ -357,6 +373,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  width: 50%;
   padding: 0.5em 1.5em;
   background: var(--primary-color);
   border-radius: 0.4em;
