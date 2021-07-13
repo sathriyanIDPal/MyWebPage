@@ -79,8 +79,8 @@ align-items: center;
                 color: white;
                 font-weight: bold;
                 padding: 0.7em 1em;
-                background: green;
-                opacity: 0.85;
+                background: var(--primary-color);
+                opacity: 0.95;
                 border-radius: 0.4em;
             }
         }
@@ -232,6 +232,14 @@ align-items: center;
             padding-right: 1em;
         }
     }
+    
+    .herosection{
+        .rightcolumn {
+            .button-div {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media only screen and  (min-width: 760px) {
@@ -265,6 +273,7 @@ align-items: center;
             }
         
             .rightcolumn{
+                margin-left: 0;
                 padding-top: 5em;
                 text-align: left;
                 h2 {
@@ -277,6 +286,11 @@ align-items: center;
                     
                     padding-left: 3em;
                     
+                }
+
+                .button-div {
+                    text-align: left;
+                    padding-left: 3em;
                 }
             }
         }
@@ -397,6 +411,11 @@ align-items: center;
                     
                     padding-left: 6em;
                     
+                }
+
+                .button-div {
+                    text-align: left;
+                    padding-left: 6em;
                 }
             }
         }
@@ -520,6 +539,11 @@ align-items: center;
                     padding-left: 9em;
                     padding-right: 13em;
                     
+                }
+
+                .button-div {
+                    text-align: left;
+                    padding-left: 9em;
                 }
             }
         }
